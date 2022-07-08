@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../src/assets/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../src/styles/main.css" />
+    <title>Weather App</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&family=Montserrat+Alternates&family=Montserrat:wght@100;300;700;900&display=swap"
+      rel="stylesheet"
+    />
+  <script defer src="bundle08f701b635bd22097be0.js"></script></head>
+  <body>
+    <div class="wrapper">
+      <div class="widget-container">
+        <div class="top-left">
+          <input placeholder="City Here, Co" class="city text-white" id="city" data-city></input>
+          <small data-message>Click on city name to search</small>
+          <h2 id="day" data-day>Saturday</h2>
+          <h3 id="date" data-date>June 27, 2022</h3>
+          <h3 id="time" data-time>2:25 PM</h3>
+        </div>
+        <div class="top-right">
+          <h1 id="weather-status"><span data-main>Sunny</span>/<br><span data-description>Clear Skies</span></h1>
+          <img
+            class="weather-icon"
+            src="http://openweathermap.org/img/wn/01d@4x.png"
+            data-image
+          />
+        </div>
+        <div class="horizontal-half-divider"></div>
+        <div class="bottom-left">
+          <h1 id="temperature"><span data-temp-metric>28</span> <span class="hidden" data-temp-imperial>28</span> </h1>
+          <h2 id="celsius" data-metric>&degC</h2>
+          <h2 id="temp-divider">/</h2>
+          <h2 id="fahrenheit" class="text-accent" data-imperial>&degF</h2>
+        </div>
+        <div class="vertical-half-divider"></div>
+        <div class="bottom-right">
+          <div class="other-details-key">
+            <p>Wind Speed</p>
+            <p>Humidity</p>
+            <p>Pressure</p>
+            <p>Sunrise Time</p>
+            <p>Sunset Time</p>
+          </div>
+          <div class="other-details-values">
+            <p><span  data-wind-metric>11 m/h</span><span class="hidden" data-wind-imperial>11 mph</span></p>
+            <p><span data-humidity>58</span> %</p>
+            <p><span data-pressure>982</span> hPa</p>
+            <p data-sunrise>6:34 am</p>
+            <p data-sunset>5:47 pm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p ><a id="myGithub" href="https://github.com/imurzaliev/weather-app">© Iskender Murzaliev 2022</a></p>
+  </body>
+</html>
