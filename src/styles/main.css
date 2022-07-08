@@ -86,7 +86,7 @@ body {
   font-family: var(--ff-sans-normal);
   font-size: var(--fs-400);
   color: hsl(var(--clr-white));
-  /* background-image: url(../assets/tom-barrett-hgGplX3PFBg-unsplash.jpg); */
+  background-image: url(../../src/assets/tom-barrett-hgGplX3PFBg-unsplash.jpg);
   background-size: cover;
   line-height: 1.5;
   min-height: 100vh;
@@ -261,3 +261,171 @@ select {
 /* ------------------ */
 /*  Components        */
 /* ------------------ */
+.widget-container {
+  width: 612px;
+  height: 412px;
+  display: block;
+  background-color: hsl(var(--clr-dark));
+  border-radius: 25px;
+  margin: 10% auto 0 auto;
+}
+
+/* Widget 4 Quarter Division here */
+
+.top-left {
+  height: 60%;
+  width: 50%;
+  padding: 35px 0 0 50px;
+  display: inline-block;
+}
+
+.top-right {
+  height: 60%;
+  width: 50%;
+  float: right;
+  padding: 35px 0 0 0;
+}
+
+.bottom-left {
+  height: 40%;
+  width: 45%;
+  float: left;
+  margin: 0;
+  padding: 40px 0 0 50px;
+}
+
+.bottom-right {
+  height: 40%;
+  width: 55%;
+  float: right;
+  padding: 25px 0 0 60px;
+}
+
+/* Top-left Div CSS */
+
+#city {
+  font-weight: 900;
+  font-size: 2.5rem;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid hsl(var(--clr-white));
+  width: 100%;
+}
+
+#city:focus {
+  outline: 0;
+}
+
+::placeholder {
+  opacity: 1;
+}
+
+small {
+  font-size: x-small;
+}
+
+#day {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 13px;
+}
+
+#date {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 4px;
+}
+
+#time {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+/* Top-Right Div CSS */
+
+#weather-status {
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.top-right > img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: -35px auto 0 auto;
+}
+
+/* Horizontal-Half-divider */
+
+.horizontal-half-divider {
+  width: 100%;
+  height: 3px;
+  margin-top: -5px;
+  background-color: hsl(var(--clr-white));
+}
+
+.vertical-half-divider {
+  width: 3px;
+  position: absolute;
+  height: 165px;
+  background-color: hsl(var(--clr-white));
+  display: inline-block;
+  padding: 0;
+}
+
+/* Bottom-left CSS */
+
+#temperature,
+#celsius,
+#temp-divider,
+#fahrenheit {
+  display: inline;
+  vertical-align: middle;
+}
+
+#temperature {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+#celsius,
+#fahrenheit {
+  cursor: pointer;
+}
+
+#celsius,
+#temp-divider,
+#fahrenheit {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+/* Bottom-Right CSS */
+
+.other-details-key {
+  float: left;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.other-details-values {
+  float: left;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 40px;
+}
+
+#myGithub {
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-decoration: none;
+  color: hsl(var(--clr-dark));
+  background-color: hsl(var(--clr-white) / 0.4);
+  border-radius: 5px;
+  padding: 0 5px;
+}
